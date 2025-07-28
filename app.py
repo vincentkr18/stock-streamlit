@@ -396,7 +396,26 @@ class StockAnalyzer:
 def initialize_session_state():
     """Initialize session state variables"""
     if "tickers" not in st.session_state:
-        st.session_state.tickers = ["AAPL", "MSFT", "GOOGL"]
+        st.session_state.tickers = [
+            "NVDA",
+            "META",
+            "BRK-B",
+            "NFLX",
+            "PG",
+            "AVGO",
+            "ORCL",
+            "TSLA",
+            "ANET",
+            "ORLY",
+            "V",
+            "AAPL",
+            "MSFT",
+            "GOOGL",
+            "AMD",
+            "TSM",
+            "PLTR",
+            "SMC",
+        ]
     if "analyzer" not in st.session_state:
         st.session_state.analyzer = StockAnalyzer()
     if "data_loaded" not in st.session_state:
